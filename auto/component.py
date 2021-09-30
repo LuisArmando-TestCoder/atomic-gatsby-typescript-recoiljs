@@ -43,7 +43,7 @@ executeConditionalPath(
 )
 
 executeConditionalPath(
-    f"{folderPath}/style.scss",
+    f"{folderPath}/styles.scss",
     lambda path: createFile(
         path,
         "." + componentName.lower() + " {\n" +

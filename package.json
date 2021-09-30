@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "atomic-gatsby-typescript-recoiljs",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "An atomic bare-bones starter for Gatsby with Typescript and Recoil.js",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {

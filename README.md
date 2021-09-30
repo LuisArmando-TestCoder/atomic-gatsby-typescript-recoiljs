@@ -28,10 +28,11 @@
 3. **Set all exports**
 
     Use this command whenever creating new folders in:
-        - utils
-        - state
-        - components
-        - types
+
+        -   utils
+        -   state
+        -   components
+        -   types
 
     If more folders are needed they can be added at auto/modules/export.py
 

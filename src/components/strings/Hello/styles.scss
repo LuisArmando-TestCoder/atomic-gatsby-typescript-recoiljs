@@ -1,0 +1,12 @@
+.hello {
+	text-align: center;
+
+	&__highlight {
+		color: #9940ff;
+		font-family: var(--paragraph-font);
+	}
+
+	&__greeting {
+		color: #6300d4;
+	}
+}

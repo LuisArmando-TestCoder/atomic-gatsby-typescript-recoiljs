@@ -52,4 +52,36 @@ executeConditionalPath(
     )
 )
 
+executeConditionalPath(
+    f"../src/stories/{componentName}.stories.jsx",
+    lambda path: createFile(
+        path,
+        "import React from 'react';\n" +
+        "\n" +
+        "import * as Components from '../components';\n" +
+        "\n" +
+        "export default {\n" +
+        "\ttitle: '" + componentScope + "/" + componentName + "',\n" +
+        "\tcomponent: Components.strings.GlobalWrapper,\n" +
+        "\targTypes: {\n" +
+        "\t\ttitle: { control: 'text' },\n" +
+        "\t},\n" +
+        "};\n" +
+        "\n" +
+        "const Template = ({title}) => (\n" +
+        "\t<Components.strings.GlobalWrapper title={title}>\n" +
+        "\t\t<Components." + componentScope + "." + componentName + ">\n" +
+        "\t\t\t{title}\n" +
+        "\t\t</Components." + componentScope + "." + componentName + ">\n" +
+        "\t</Components.strings.GlobalWrapper>\n" +
+        ");\n" +
+        "\n" +
+        "export const Primary = Template.bind({});\n" +
+        "Primary.args = {\n" +
+        "\ttitle: '" + componentName + "',\n" +
+        "};\n"
+    )
+)
+
+
 import modules.export

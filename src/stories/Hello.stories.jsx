@@ -3,7 +3,7 @@ import React from 'react';
 import * as Components from '../components';
 
 export default {
-  title: 'Example/Hello',
+  title: 'strings/Hello',
   component: Components.strings.GlobalWrapper,
   argTypes: {
     title: { control: 'text' },
@@ -20,5 +20,5 @@ const Template = ({title}) => (
 
 export const Primary = Template.bind({});
 Primary.args = {
-  title: 'Storybook',
+  title: 'Hello',
 };
